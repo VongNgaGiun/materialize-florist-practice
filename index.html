@@ -1,0 +1,394 @@
+<!-- tutorial source:
+https://www.youtube.com/watch?v=gCZ3y6mQpW0&list=PL4cUxeGkcC9gGrbtvASEZSlFEYBnPkmff&index=1&ab_channel=TheNetNinja -->
+<!-- photos sources: https://unsplash.com/ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Florist Dolly</title>
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <style>
+      header {
+        background: url('./img/kendall-scott-SmY_N0n4rKI-unsplash.jpg');
+        background-size: cover;
+        background-position: center;
+        min-height: 1000px;
+      }
+
+      .section {
+        padding-top: 4vw;
+        padding-bottom: 4vw;
+      }
+
+      .tabs .indicator {
+        background-color: #004d40;
+      }
+
+      .tabs .tab a:focus,
+      .tabs .tab a:focus.active {
+        background-color: transparent;
+      }
+
+      .datepicker-date-display {
+        background-color: #004d40;
+      }
+
+      button.btn {
+        background-color: #004d40;
+      }
+
+      @media screen and (max-width: 670px) {
+        header {
+          min-height: 500px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navbar -->
+    <header>
+      <nav class="nav wrapper transparent">
+        <div class="container">
+          <a href="#" class="brand-logo teal-text text-darken-4"
+            >Florist Dolly</a
+          >
+          <!-- sidenav menu icon -->
+          <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+            <i class="material-icons teal-text text-darken-4">menu</i>
+          </a>
+
+          <!-- topnav -->
+          <ul class="right hide-on-med-and-down">
+            <li>
+              <a href="#flowers" class="teal-text text-darken-4">Flowers</a>
+            </li>
+            <li>
+              <a href="#services" class="teal-text text-darken-4">Services</a>
+            </li>
+            <li>
+              <a href="#contact" class="teal-text text-darken-4">Contact</a>
+            </li>
+
+            <!-- social media icons -->
+            <li>
+              <a
+                href="#"
+                class="btn-floating btn-small teal darken-4 tooltipped"
+                data-tooltip="Facebook"
+              >
+                <i class="fab fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="btn-floating btn-small teal darken-4 tooltipped"
+                data-tooltip="Instagram"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="btn-floating btn-small teal darken-4 tooltipped"
+                data-tooltip="Twitter"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+          </ul>
+
+          <!-- sidenav -->
+          <ul class="sidenav teal lighten-5" id="mobile-menu">
+            <li>
+              <a href="#flowers" class="teal-text text-darken-4">Flowers</a>
+            </li>
+            <li>
+              <a href="#services" class="teal-text text-darken-4">Services</a>
+            </li>
+            <li>
+              <a href="#contact" class="teal-text text-darken-4">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- flowers / grid -->
+    <section class="container section scrollspy" id="flowers">
+      <div class="row">
+        <div class="col s12 l4">
+          <img
+            src="./img/peter-zagar-bLgWa9b0ioY-unsplash.jpg"
+            alt="potted flower"
+            class="responsive-img material-box"
+          />
+        </div>
+        <div class="col s12 l6 offset-l1">
+          <h2 class="teal-text text-darken-4">Potted Flowers</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi
+            neque sapiente provident, quod nam nisi voluptas dolores cupiditate
+            accusantium dicta quis corrupti quisquam pariatur dolore at ipsam
+            veritatis. Tempora, nemo.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12 l4 push-l7 offset-l1">
+          <img
+            src="./img/debby-hudson-VO7p_CgTylQ-unsplash.jpg"
+            alt="bouquet"
+            class="responsive-img material-box"
+          />
+        </div>
+        <div class="col s12 l6 pull-l5 right-align offset-l1">
+          <h2 class="teal-text text-darken-4">Bouquets</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi
+            neque sapiente provident, quod nam nisi voluptas dolores cupiditate
+            accusantium dicta quis corrupti quisquam pariatur dolore at ipsam
+            veritatis. Tempora, nemo.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12 l4">
+          <img
+            src="./img/cary-bates-8lGVmnzv15o-unsplash.jpg"
+            alt="dried flower"
+            class="responsive-img material-box"
+          />
+        </div>
+        <div class="col s12 l6 offset-l1">
+          <h2 class="teal-text text-darken-4">Dried Flowers</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi
+            neque sapiente provident, quod nam nisi voluptas dolores cupiditate
+            accusantium dicta quis corrupti quisquam pariatur dolore at ipsam
+            veritatis. Tempora, nemo.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- parallax -->
+    <div class="parallax-container">
+      <div class="parallax">
+        <img
+          src="./img/anthony-fomin-h7_SyoBhHF0-unsplash.jpg"
+          alt="no"
+          class="responsive-img"
+        />
+      </div>
+    </div>
+
+    <!-- services / tabs -->
+    <section class="container section scrollspy" id="services">
+      <div class="row">
+        <div class="col s12 l4">
+          <h2 class="teal-text text-darken-4">What I Do...</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+            dignissimos architecto commodi quo quis vero, sint in cumque ullam,
+            perferendis enim! Temporibus ea quis asperiores repudiandae hic?
+            Optio, architecto tempore!
+          </p>
+        </div>
+        <div class="col s12 l6 offset-l2">
+          <!-- tab -->
+          <ul class="tabs">
+            <li class="tab col s6">
+              <a href="#design" class="teal-text text-darken-4">Design</a>
+            </li>
+            <li class="tab col s6">
+              <a href="#packaging" class="teal-text text-darken-4">Packaging</a>
+            </li>
+          </ul>
+
+          <!-- tab content -->
+          <div class="col s12" id="design">
+            <p class="flow-text teal-text text-darken-4">
+              Create and Design Floral Arrangements
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+              dolorum, provident ab, hic dignissimos doloremque quibusdam ipsum
+              veritatis enim obcaecati vel fuga nisi qui illum accusantium
+              ratione harum, laboriosam laborum.
+            </p>
+          </div>
+
+          <div class="col s12" id="packaging">
+            <p class="flow-text teal-text text-darken-4">
+              Wrapping Flowers for Customers
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+              dolorum, provident ab, hic dignissimos doloremque quibusdam ipsum
+              veritatis enim obcaecati vel fuga nisi qui illum accusantium
+              ratione harum, laboriosam laborum.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- parallax -->
+    <div class="parallax-container">
+      <div class="parallax">
+        <img
+          src="./img/ellicia-24HcJhf0u6M-unsplash.jpg"
+          alt="no"
+          class="responsive-img"
+        />
+      </div>
+    </div>
+
+    <!-- contact form -->
+    <section class="section container scrollspy" id="contact">
+      <div class="row">
+        <div class="col s12 l5">
+          <h2 class="teal-text text-darken-4">Get in Touch</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, ea
+            consequuntur. Quaerat, beatae. Laborum, reprehenderit labore dicta
+            dignissimos dolor nihil facilis incidunt voluptas corrupti aperiam
+            unde quod at totam quae.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, ea
+            consequuntur. Quaerat, beatae. Laborum, reprehenderit labore dicta
+            dignissimos dolor nihil facilis incidunt voluptas corrupti aperiam
+            unde quod at totam quae.
+          </p>
+        </div>
+
+        <div class="col s12 l5 offset-l2">
+          <form action="">
+            <div class="input-field">
+              <i class="material-icons prefix">email</i>
+              <input type="email" id="email" />
+              <label for="email">Your Email</label>
+            </div>
+
+            <div class="input-field">
+              <i class="material-icons prefix">message</i>
+              <textarea id="message" class="materialize-textarea"></textarea>
+              <label for="message">Your Message</label>
+            </div>
+
+            <div class="input-field">
+              <input type="text" id="date" class="datepicker" />
+              <label for="date">Choose a Date You Need Me for...</label>
+            </div>
+
+            <div class="input-field">
+              <p>Services Required...</p>
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span>Design</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span>Packaging</span>
+                </label>
+              </p>
+            </div>
+
+            <div class="input-field center">
+              <button class="btn">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="page-footer teal darken-4">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 l6">
+            <h5>About Me</h5>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Blanditiis quasi voluptas labore minima odio temporibus itaque
+              quos, reprehenderit incidunt, mollitia est, excepturi sunt harum
+              dolorum at molestias deleniti in quidem.
+            </p>
+          </div>
+
+          <div class="col s12 l4 offset-l2">
+            <h5>Connect</h5>
+            <ul>
+              <li><a href="#" class="teal-text text-lighten-3">Facebook</a></li>
+              <li>
+                <a href="#" class="teal-text text-lighten-3">Instagram</a>
+              </li>
+              <li><a href="#" class="teal-text text-lighten-3">Twitter</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-copyright teal darken-4">
+        <div class="container center-align">&copy; 2022 Florist Dolly</div>
+      </div>
+    </footer>
+
+    <!-- jquery cdn-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // sidenav
+        $('.sidenav').sidenav();
+
+        //material box
+        $('.material-box').materialbox();
+
+        //parallax
+        $('.parallax').parallax();
+
+        //tab
+        $('.tabs').tabs();
+
+        //datepicker
+        $('.datepicker').datepicker({
+          disableWeekends: true,
+        });
+
+        //tooltip
+        $('.tooltipped').tooltip();
+
+        //scrollspy
+        $('.scrollspy').scrollSpy();
+      });
+    </script>
+  </body>
+</html>
